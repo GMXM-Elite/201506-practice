@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<button id="btnok"></button>
+</body>
+<script>
+    function Country(name){
+        this.name = name;
+    }
+    function City(name){
+        this.name = name;
+    }
+    function ClassRoom(name){
+        this.name = name;
+    }
+    var country= new Country('北京');
+    function Factory(){
+        var city=new City(Date.now());
+        return function(){
+            return city;
+        }
+    }
+    var f1=Factory();
+    var f2=Factory();
+    console.log(f1());
+    console.log(f2());
+    setTimeout(function(){
+        f1=null;
+        f2=null;
+    },10000);
+
+    var cities=[];
+
+    var fa=null;
+    document.querySelector('#btnok').addEventListener('click',function(){
+        if(!fa){
+            fa=Factory();
+        }
+        cities.push((Factory()));
+    })
+/*
+* 内存泄露分析
+* */
+</script>
+</html>
