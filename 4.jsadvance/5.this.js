@@ -16,8 +16,8 @@ var obj={
     })()
 
 };
-var fn1=obj.fn1;
+var fn1 = obj.fn1;
 console.log(number);//4
-fn1(); //9
-console.log(number)
+fn1();//9
+obj.fn1();//27
 
