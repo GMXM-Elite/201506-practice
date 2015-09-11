@@ -6,6 +6,21 @@
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
+<img src="picture.jpg">
 <h2>这是fs返回的</h2>
+<div id="ajaxrequest"></div>
 </body>
+<script src="test/b.js"></script>
+<script>
+    setTimeout(function(){
+        var xhr=new XMLHttpRequest();
+        xhr.open('get','/ajax',true);
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4&&xhr.status==200){
+                document.querySelector('#ajaxrequest').innerHTML=xhr.responseText;
+            }
+        };
+        xhr.send(null);
+    },3000);
+</script>
 </html>
