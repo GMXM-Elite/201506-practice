@@ -12,5 +12,5 @@
 var home='beijing';
 exports.name=name;
 exports.age=age;
-console.log(xxx)
+//console.log(xxx)
 //return exports;

@@ -1,0 +1,18 @@
+{
+  "name": "lzhhzy",
+  "version": "1.0.0",
+  "description": "这是我的项目",
+  "main": "1.namespace.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LzhElite/lzhhzy"
+  },
+  "keywords": [
+    "lzhhzy"
+  ],
+  "author": "lzh",
+  "license": "MIT"
+}
