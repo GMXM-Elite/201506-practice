@@ -11,12 +11,12 @@ function say2(){
 function say(){
     console.log('say0');
 }
-/*¶¨Ê±Æ÷*/
+/*å®šæ—¶å™¨*/
 setTimeout(say,1000);
-/*·ÅÈë±¾´ÎÊÂ¼şÑ­»·Í·²¿*/
+/*æ”¾å…¥æœ¬æ¬¡äº‹ä»¶å¾ªç¯å¤´éƒ¨*/
 process.nextTick(say1);
 
-/*·ÅÈëÏÂ´ÎÊÂ¼şÑ­»·µ×²¿*/
+/*æ”¾å…¥ä¸‹æ¬¡äº‹ä»¶å¾ªç¯åº•éƒ¨*/
 setImmediate(say2);
 
 console.log('welcome1');

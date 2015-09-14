@@ -11,9 +11,9 @@ person.say('hello');
 var p={
     name:'node.js'
 }
-person.say.call(p,'hello');//把p作为this
+person.say.call(p,'hello');//鎶妏浣滀负this
 
-//永久绑定this
+//姘镐箙缁戝畾this
 person.say.b(p,'hello1');
 
 Function.prototype.b=function(context){
@@ -23,3 +23,4 @@ Function.prototype.b=function(context){
         that.apply(context,args);
     }
 }
+

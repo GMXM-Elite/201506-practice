@@ -1,7 +1,7 @@
 var fs=require('fs');
 /*
-* ·ÇÁ÷Ê½¶ÁÈ¡
-* */
+ * éæµå¼è¯»å–
+ * */
 
 var file=fs.createReadStream('./129.txt');
 
