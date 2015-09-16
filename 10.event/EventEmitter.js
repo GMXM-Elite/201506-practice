@@ -12,12 +12,12 @@ util.inherits(Person,EventEmitter);
 var girl=new Girl();
 
 var diaosi= function(things){
-    console.log('Ï²»¶¾Í¶à¿´¿´°É');
+    console.log('å–œæ¬¢å°±å¤šçœ‹çœ‹å§');
 }
 var gaofushuai= function(things){
-    console.log('¸øÄãÂòÊ®Ì¨');
+    console.log('ç»™ä½ ä¹°åå°');
 }
-girl.on('¿´ÁËºÃ¾Ã',diaosi);
-girl.on('¿´ÁËºÃ¾Ã',gaofushuai);
+girl.on('çœ‹äº†å¥½ä¹…',diaosi);
+girl.on('çœ‹äº†å¥½ä¹…',gaofushuai);
 
-girl.emit('¿´ÁËºÃ¾Ã',diaosi);
+girl.emit('çœ‹äº†å¥½ä¹…',diaosi);

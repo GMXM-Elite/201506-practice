@@ -1,11 +1,11 @@
 /**
- * ¹Û²ìÕß ·¢²¼¶©ÔÄÄ£Ê½
+ * è§‚å¯Ÿè€… å‘å¸ƒè®¢é˜…æ¨¡å¼
  */
 function Event(name){
     this.name=name;
     this._evetnts=[];
 }
-//¼àÌıÊÂ¼ş
+//ç›‘å¬äº‹ä»¶
 Event.prototype.on=function(eventName,listener){
     if(this._evetnts[eventName]){
         this._evetnts.push(listener);
@@ -13,7 +13,7 @@ Event.prototype.on=function(eventName,listener){
         this._evetnts[eventName]=[listener]
     }
 }
-//·¢ÉäÊÂ¼ş
+//å‘å°„äº‹ä»¶
 Event.prototype.emit=function(eventName){
     var handler=this._evetnts[eventName];
     var args=Array.prototype.slice.call(arguments,1);
