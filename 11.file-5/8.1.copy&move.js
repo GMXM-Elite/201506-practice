@@ -20,6 +20,6 @@ function copy(src,dest){
     }while(readedBytes == BUFF_SIZE);
     fs.closeSync(srcFd);
     fs.closeSync(destFd);
-    //fs.unlinkSync(src);
+    fs.unlinkSync(src);
 }
 copy('msg4.txt','msg5.txt');
