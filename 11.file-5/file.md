@@ -58,9 +58,22 @@ fs.read 函数的同步版本。 返回读取的字节数（bytesRead）。
 通过文件标识fd，向指定的文件中写入buffer。
  同步版本的fs.write()。返回写入的字节数（bytesWritten）。
 
-#fs.close
+#9 fs.close
     关闭文件
-#fs.closeSync
-
-#fs.unlink
-#fs.unlinkSync
+#9 fs.closeSync
+    同步关闭文件
+#10 fs.unlink
+    删除文件操作。
+#10 fs.unlinkSync
+    同步删除文件
+#11 fs.mkdir
+    创建目录
+#12 fs.readdir
+    读取目录
+#13 fs.stat
+    查看目录
+#14 fs.exists
+    判断目录是否存在
+#15 fs.realpath(path,callback)
+    从相对路径得到绝对路径
+    
